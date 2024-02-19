@@ -1,4 +1,4 @@
-# Basic SysAdmin (RHEL-based Distro)
+# Basic SysAdmin
 
 ## Informazioni di Sistema:
 
@@ -44,9 +44,9 @@
 - `firewall-cmd --state`: Mostra lo stato del firewall.
 - `firewall-cmd --list-all`: Mostra dettagli sulla configurazione del firewall.
 - `sestatus`: Mostra lo stato di SELinux.
-- `setenforce 0`: Disabilita temporaneamente SELinux (0=disabilitato, 1=enforcing, per riabilitare).
+- `setenforce 0`: Disabilita temporaneamente SELinux.
 - `getenforce`: Mostra lo stato di SELinux (Enforcing, Permissive, Disabled).
-- `iptables -S`: Elenca le regole del firewall (preferisco questo output rispetto a -L).
+- `iptables -L`: Elenca le regole del firewall.
 
 ## Risoluzione Problemi di Rete:
 
@@ -54,7 +54,7 @@
 - `nslookup`: Effettua interrogazioni DNS.
 - `ping nomeHost`: Verifica la connettività a un host.
 - `traceroute nomeHost`: Mostra il percorso che i pacchetti seguono per raggiungere un host.
-- `ss -ntulp`: Visualizza le connessioni di rete attive, le porte in ascolto e i programmi associati (obsoleto).
+- `ss`: Visualizza le connessioni di rete.
 - `ip route show`: Mostra la tabella di routing.
 - `ip neigh show`: Visualizza la tabella ARP per le associazioni IP/MAC.
 - `ip link show`: Mostra tutte le interfacce, anche quelle non attive.
@@ -73,3 +73,4 @@
 - `systemctl stop nomeServizio`: Arresta un servizio.
 - `systemctl start nomeServizio`: Avvia un servizio.
 - `systemctl restart nomeServizio`: Riavvia un servizio.
+ƒ
