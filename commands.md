@@ -1,4 +1,4 @@
-# Basic SysAdmin (RHEL) WIP
+# Basic SysAdmin (RHEL)
 
 ## Informazioni di Sistema:
 
